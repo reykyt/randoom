@@ -1,0 +1,50 @@
+.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+body {
+    background-color: rgba(108, 112, 112, 0.774);
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.error {
+    color: rgb(245, 104, 104);
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.succes {
+    color: rgb(113, 216, 113);
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 30px;
+    color: azure;
+}
+
+input {
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    border-radius: 15px;
+}
