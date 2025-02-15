@@ -16,18 +16,18 @@ myBtn.addEventListener(`click`,()=>{
     if(input==random){
         sus.classList.add("succes");
         sus.classList.remove("error");
-        sus.textContent=`Успешно вы угадали число ${random} за ${i} попыток`;
-
+        sus.textContent=`Успешно вы угадали число ${random} за ${i} попыток, я загадал новое`;
+    random=Math.floor(Math.random() * (20 - 1 +1 ) + 1);
     }
     else if(input<random){
         sus.classList.add("error");
         sus.classList.remove("succes");
-        sus.textContent=`Ваше число меньше загаданного`;
+        sus.textContent=`Ваше число меньше загаданного(попытка ${i})`;
     }
     else if(input>random){
         sus.classList.add("error");
         sus.classList.remove("succes");
-        sus.textContent=`Ваше число больше загаданного`;
+        sus.textContent=`Ваше число больше загаданного(попытка ${i})`;
     }
       
 })
