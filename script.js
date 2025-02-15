@@ -19,10 +19,15 @@ myBtn.addEventListener(`click`,()=>{
         sus.textContent=`Успешно вы угадали число ${random} за ${i} попыток`;
 
     }
-    else{
+    else if(input<random){
         sus.classList.add("error");
         sus.classList.remove("succes");
-        sus.textContent=`Вы не угадали число попробуйте ещё рез`;
+        sus.textContent=`Ваше число меньше загаданного`;
+    }
+    else if(input>random){
+        sus.classList.add("error");
+        sus.classList.remove("succes");
+        sus.textContent=`Ваше число больше загаданного`;
     }
       
 })
